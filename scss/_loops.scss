@@ -45,6 +45,15 @@ $sizes: 1200, 1024, 768;
     }
 }
 
+$displays: block, flex, grid, inline, inline-block, inline-flex;
+
+@each $display in $displays {
+    .display-#{$display} {
+        display: #{$display};
+    }
+}
+
+
 @for $i from 2 through 12 { 
     .grid-#{$i} {
         display: grid;
