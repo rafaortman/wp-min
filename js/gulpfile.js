@@ -8,8 +8,8 @@ var gulp = require("gulp"),
 
 var paths = {
     scss: {
-        src: "./scss/*.scss",
-        dest: "./"
+        src: "../scss/*.scss",
+        dest: "../"
     }
 };
 
@@ -47,8 +47,8 @@ function watch() {
         port: 3000
     });
     gulp.watch(paths.scss.src, scss)
-    gulp.watch("./**/*.php").on('change', reload);
-    gulp.watch("./**/*.js").on('change', reload);
+    gulp.watch("../**/*.php").on('change', reload);
+    gulp.watch("../**/*.js").on('change', reload);
 }
 
 exports.default = watch
