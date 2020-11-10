@@ -1,27 +1,33 @@
-@for $i from 1 through 6 {
+@for $i from 0 through 6 {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
     .mt-#{$i} { 
-        margin-top: #{$i}rem !important;
+        margin-top: #{$i}rem;
     }
     .mb-#{$i} {
-        margin-bottom: #{$i}rem !important;
+        margin-bottom: #{$i}rem;
     }
     .ml-#{$i} {
-        margin-left: #{$i}rem !important;
+        margin-left: #{$i}rem;
     }
     .mr-#{$i} {
-        margin-right: #{$i}rem !important;
+        margin-right: #{$i}rem;
+    }
+    .p-#{$i} {
+        padding: #{$i}rem;
     }
     .pt-#{$i} {
-        padding-top: #{$i}rem !important;
+        padding-top: #{$i}rem;
     }
     .pb-#{$i} {
-        padding-bottom: #{$i}rem !important;
+        padding-bottom: #{$i}rem;
     }
     .pl-#{$i} {
-        padding-left: #{$i}rem !important;
+        padding-left: #{$i}rem;
     }
     .pr-#{$i} {
-        padding-right: #{$i}rem !important;
+        padding-right: #{$i}rem;
     }
 }
 
@@ -33,7 +39,7 @@ $list: center, right, left;
     }
 }
 
-$sizes: 1200, 1024, 768;
+$sizes: 1600, 1200, 1024, 768, 640, 480, 400;
 
 @each $size in $sizes {
     .max#{$size} {
