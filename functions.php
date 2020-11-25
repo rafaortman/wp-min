@@ -34,6 +34,16 @@
         wp_deregister_style( 'wp-components' ); 
     }
 
+    //Page Slug Body Class
+    function add_slug_body_class( $classes ) {
+        global $post;
+        if ( isset( $post ) ) {
+            $classes[] = $post->post_type . '-' . $post->post_name;
+        }
+        return $classes;
+    }
+    add_filter( 'body_class', 'add_slug_body_class' );
+
     if (!is_admin()) {
         add_action( 'wp_print_styles', 'wps_deregister_css_js', 100 );
     }
