@@ -21,10 +21,15 @@
             <?php get_search_form(); ?>
         </div>
         <?php 
-            wp_nav_menu( array(
-                'menu'              => "menu", 
-                'container'         => "nav",
-            ) ); 
+            wp_nav_menu( 
+                array(
+                    'menu'              => "menu", 
+                    'menu_class'        => "menu", 
+                    'menu_id'           => "menuPrincipal", 
+                    'container'         => "nav",
+                    'container_class'   => "menu-container",
+                ) 
+            );  
         ?>
         <button id="menuBt" class="toggle-bt">
             <span class="stripes">
