@@ -15,8 +15,8 @@
 
     //Adding theme css & js
     function theme_css_js() {
-        wp_enqueue_style( 'refinaria-style', get_stylesheet_uri() . '?v='.time() );
-        wp_enqueue_script( 'refinaria-main', get_template_directory_uri() . '/js/scripts.js?v='.time(), array('jquery'), '20151215', true );
+        wp_enqueue_style( 'theme-style', get_stylesheet_uri() . '?v='.time() );
+        wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/scripts.js?v='.time(), array('jquery'), '20151215', true );
     }
     add_action( 'wp_enqueue_scripts', 'theme_css_js' );
 
