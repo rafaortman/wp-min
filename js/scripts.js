@@ -26,7 +26,7 @@
 
     $('#menuBt').on('click', function () {
         $(this).toggleClass('ativo');
-        $('#siteMenu').toggleClass('ativo');
+        $('.menu').toggleClass('ativo');
         $('#searchForm').removeClass('ativo');
     });
     
