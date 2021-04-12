@@ -43,7 +43,7 @@ function reload() {
 function watch() {
     browserSync.init({
         //O proxy deve ser alterado para a pasta do projeto
-        proxy: "localhost/___/wordpress/",
+        proxy: "localhost/~rafaelortman/_refinaria/wordpress/",
         port: 3000
     });
     gulp.watch(paths.scss.src, scss)
