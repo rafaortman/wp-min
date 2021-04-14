@@ -89,3 +89,11 @@ ul, ol {
 address {
     font-style: normal;
 }
+
+hr {
+    margin: 1rem 0;
+    display: block;
+    height: 0;
+    border: 0;
+    border-top: 1px solid;
+}
