@@ -1,33 +1,40 @@
-@for $i from 0 through 6 {
-    .m-#{$i} {
-        margin: #{$i}rem;
+@for $i from 0 through 100 {
+    $j: $i * 2;
+    .m-#{$j} {
+        margin: #{$j}px;
     }
-    .mt-#{$i} { 
-        margin-top: #{$i}rem;
+    .mt-#{$j} { 
+        margin-top: #{$j}px;
     }
-    .mb-#{$i} {
-        margin-bottom: #{$i}rem;
+    .mb-#{$j} {
+        margin-bottom: #{$j}px;
     }
-    .ml-#{$i} {
-        margin-left: #{$i}rem;
+    .ml-#{$j} {
+        margin-left: #{$j}px;
     }
-    .mr-#{$i} {
-        margin-right: #{$i}rem;
+    .mr-#{$j} {
+        margin-right: #{$j}px;
     }
-    .p-#{$i} {
-        padding: #{$i}rem;
+    .p-#{$j} {
+        padding: #{$j}px;
     }
-    .pt-#{$i} {
-        padding-top: #{$i}rem;
+    .pt-#{$j} {
+        padding-top: #{$j}px;
     }
-    .pb-#{$i} {
-        padding-bottom: #{$i}rem;
+    .pb-#{$j} {
+        padding-bottom: #{$j}px;
     }
-    .pl-#{$i} {
-        padding-left: #{$i}rem;
+    .pl-#{$j} {
+        padding-left: #{$j}px;
     }
-    .pr-#{$i} {
-        padding-right: #{$i}rem;
+    .pr-#{$j} {
+        padding-right: #{$j}px;
+    }
+    .height-#{$j} {
+        height: #{$j}px;
+    }
+    .width-#{$j} {
+        width: #{$j}px;
     }
 }
 
@@ -84,4 +91,10 @@ $displays: block, flex, grid, inline, inline-block, inline-flex;
         width: 100%;
         height: 100%;
     }
+}
+
+@mixin v_align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
