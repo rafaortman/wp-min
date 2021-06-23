@@ -1,0 +1,130 @@
+.wpcf7-form {
+    margin-top: 3rem;
+
+    p {
+        margin: 0;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    br {
+        display: none;
+    }
+
+    .wpcf7-form-control-wrap {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .wpcf7-list-item {
+        margin: 0 0 .5rem;
+        label {
+            margin-right: 1rem;
+        }
+    }
+
+}
+
+label {
+    display: block;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .3s;
+    border: none;
+    appearance: none;
+    padding: .75rem 1.5rem;
+    font-weight: bold;
+
+    &:hover {
+        opacity: .9;
+        box-shadow: 0 0 10px transparentize(black, .7);
+    }
+}
+
+select {
+    padding: .5rem;
+}
+
+textarea {
+    padding: .5rem;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: inherit;
+}
+
+.titulo-campo {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: .5rem;
+    line-height: 1;
+}
+
+.form-2itens {
+    display: flex;
+
+    label.instituicao {
+        flex-grow: 1;
+    }
+
+    label.estado {
+        flex-grow: 0;
+        flex-basis: 60px;
+        margin-left: 1rem;
+    }
+
+    @media(max-width: 400px) {
+        display: block;
+        label.estado {
+            margin: 0;
+        }
+    }
+}
+
+.form-3itens {
+    display: flex;
+
+    label.estado {
+        flex-grow: 0;
+        flex-basis: 60px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @media(max-width: 500px) {
+        display: block;
+        label.estado {
+            margin: 0;
+        }
+    }
+}
