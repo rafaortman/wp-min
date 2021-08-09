@@ -101,4 +101,6 @@
         $(this).closest('.modal').removeClass('ativo');
     });
     
+    $("iframe[src*='youtube']").unwrap().wrap('<div class="video-wrapper">');
+    
 })(jQuery);
