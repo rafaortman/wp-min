@@ -1,40 +1,40 @@
 @for $i from 0 through 100 {
     $j: $i * 2;
     .m-#{$j} {
-        margin: #{$j}px;
+        margin: #{$j}px !important;
     }
     .mt-#{$j} { 
-        margin-top: #{$j}px;
+        margin-top: #{$j}px !important;
     }
     .mb-#{$j} {
-        margin-bottom: #{$j}px;
+        margin-bottom: #{$j}px !important;
     }
     .ml-#{$j} {
-        margin-left: #{$j}px;
+        margin-left: #{$j}px !important;
     }
     .mr-#{$j} {
-        margin-right: #{$j}px;
+        margin-right: #{$j}px !important;
     }
     .p-#{$j} {
-        padding: #{$j}px;
+        padding: #{$j}px !important;
     }
     .pt-#{$j} {
-        padding-top: #{$j}px;
+        padding-top: #{$j}px !important;
     }
     .pb-#{$j} {
-        padding-bottom: #{$j}px;
+        padding-bottom: #{$j}px !important;
     }
     .pl-#{$j} {
-        padding-left: #{$j}px;
+        padding-left: #{$j}px !important;
     }
     .pr-#{$j} {
-        padding-right: #{$j}px;
+        padding-right: #{$j}px !important;
     }
     .height-#{$j} {
-        height: #{$j}px;
+        height: #{$j}px !important;
     }
     .width-#{$j} {
-        width: #{$j}px;
+        width: #{$j}px !important;
     }
 }
 
@@ -54,7 +54,6 @@ $sizes: 1600, 1200, 1024, 768, 640, 480, 400;
         margin: auto;
         width: 100%;
         max-width: #{$size}px;
-        padding: 0 1rem;
     }
 }
 
