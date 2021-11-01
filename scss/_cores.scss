@@ -1,0 +1,29 @@
+
+$bege:      #A8A198;
+$laranja:   #DA5914;
+$abobora:   #F59D24;
+$marinho:   #271F61;
+$prata:     #8AA5B0;
+$turqueza:  #4EBDC3;
+$musgo:     #006170;
+
+$cores: (
+    'bege':     $bege,
+    'laranja':  $laranja,
+    'abobora':  $abobora,
+    'marinho':  $marinho,
+    'prata':    $prata,
+    'turqueza': $turqueza,
+    'musgo':    $musgo,
+    'branco':   white
+);
+
+@each $nome, $cor in $cores {
+    .bg-#{$nome} {
+        background: #{$cor};
+    }
+
+    .color-#{$nome} {
+        color: #{$cor};
+    }
+}
