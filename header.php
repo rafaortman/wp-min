@@ -31,6 +31,11 @@
                 ) 
             );  
         ?>
+	<?php 
+            if ( function_exists ( 'wpm_language_switcher' ) ) { 
+                wpm_language_switcher ('list','flag'); 
+            }
+        ?>
         <button id="menuBt" class="toggle-bt">
             <span class="stripes">
                 <span class="stripe stripe-top"></span>
