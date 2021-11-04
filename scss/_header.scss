@@ -187,20 +187,40 @@
 
 .wpm-language-switcher {
     margin-top: 0;
+    margin-left: 1rem;
     display: flex;
+
     li {
         display: inline-block;
-        > * {
+
+        [data-lang] {
             display: block;
-            height: 50px;
+            height: 40px;
             width: 40px;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            text-transform: uppercase;
+            font-size: .875rem;
+            color: lighten(black, 50) !important;
+
+            &:after {
+                content: attr(data-lang);
+            }
+
+            span {
+                @extend .sr-only;
+            }
         }
+
         &.active {
-            display: none;
+            [data-lang] {
+                background-color: #eee;
+            }
         }
+        
     }
 }
