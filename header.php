@@ -33,7 +33,7 @@
         ?>
 	<?php 
             if ( function_exists ( 'wpm_language_switcher' ) ) { 
-                wpm_language_switcher ('list','flag'); 
+                wpm_language_switcher ('list','name'); 
             }
         ?>
         <button id="menuBt" class="toggle-bt">
