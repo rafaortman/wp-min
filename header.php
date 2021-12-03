@@ -4,6 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="<?php bloginfo('description'); ?>">
+	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/logo.png">
+    	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
 	<?php wp_head(); ?>
 </head>
