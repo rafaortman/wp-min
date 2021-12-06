@@ -12,7 +12,8 @@
     - CPT UI
     - Contact Form 7
     - Editor Clássico
-    - SVG Support (inserir no início do arquivo svg ```<?xml version="1.0" encoding="utf-8"?>```)
+    - SVG Support
+    - FakerPress
 - Editar gulpfile.js alterando a pasta de instalação do tema
 - Alterar os permalinks para nome do post
 - Inserir a descrição do site
