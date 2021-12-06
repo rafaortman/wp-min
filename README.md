@@ -6,8 +6,10 @@
 - Baixar o tema
 - Instalar o tema
 - Para permitir administração de plugins e temas inserir no wp-config: ```define( 'FS_METHOD', 'direct' );```
-- Instalar e ativar plugins 
-    - Advanced Custom Fields PRO
+- Plugins úteis:
+    - WP Lang ou Polyglot
+    - Advanced Custom Fields PRO ou Carbon fields
+    - CPT UI
     - Contact Form 7
     - Editor Clássico
     - SVG Support (inserir no início do arquivo svg ```<?xml version="1.0" encoding="utf-8"?>```)
