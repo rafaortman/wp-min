@@ -44,7 +44,7 @@ function watch() {
     scss();
     browserSync.init({
         //O proxy deve ser alterado para a pasta do projeto
-        proxy: "localhost/~rafaelortman/",
+        proxy: "localhost/",
         port: 3000
     });
     gulp.watch(paths.scss.src, scss)
