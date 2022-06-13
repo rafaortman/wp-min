@@ -8,7 +8,7 @@
 - Para permitir administração de plugins e temas inserir no wp-config: ```define( 'FS_METHOD', 'direct' );```
 - Plugins úteis:
     - WP Lang ou Polyglot
-    - Advanced Custom Fields PRO ou Carbon fields
+    - Carbon fields
     - CPT UI
     - Contact Form 7
     - Editor Clássico
