@@ -1,15 +1,17 @@
 <?php
 
+    require_once( get_template_directory() . '/carbon-fields.php' );
+
     //Add theme support
     function theme_setup() {
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' ); 
-        add_theme_support( 'custom-logo' );
         register_nav_menu('menu', 'menu');
-        register_sidebar([
-            'id' => 'aside',
-            'name' => 'aside'
-        ]);
+        // add_theme_support( 'custom-logo' );
+        // register_sidebar([
+        //     'id' => 'aside',
+        //     'name' => 'aside'
+        // ]);
     }
     add_action( 'after_setup_theme', 'theme_setup' );
 
