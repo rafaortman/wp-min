@@ -41,6 +41,14 @@
                 wpm_language_switcher ('list','name'); 
             }
         ?>
+	<button id="buscaBt">
+            <div class="sr-only">
+                Buscar
+            </div>
+        </button>
+        <div id="searchForm">
+            <?php get_search_form(); ?>
+        </div>
         <button id="menuBt" class="toggle-bt">
             <span class="stripes">
                 <span class="stripe stripe-top"></span>
