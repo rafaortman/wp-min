@@ -75,6 +75,14 @@
         $('#searchForm').removeClass('ativo');
     });
     
+    $('.menu-item-has-children>a').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('ativo');
+        $(this).parent().siblings().find('.sub-menu').removeClass('ativo');
+        $(this).parent().siblings().find('a').removeClass('ativo');
+        $(this).next().toggleClass('ativo');
+    });
+    
     $('.carrossel').slick({
         autoplay: true,
         autoplaySpeed: 6000,
