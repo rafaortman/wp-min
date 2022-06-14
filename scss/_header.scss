@@ -26,20 +26,115 @@
     display: flex;
     justify-content: flex-end;
     transition: .5s;
+    height: 100%;
+    
+    li {
+        height: 100%;
+    }
 
     a {
+        text-transform: uppercase;
         display: block;
-        padding: 1rem;
+        height: 100%;
+        @include v_align;
+        padding: .5rem;
+
+        &:hover {
+            text-decoration: none;
+            background-color: transparentize(black, .93);
+        }
+    }
+
+    .menu-item-has-children {
+        position: relative;
+        > a {
+            position: relative;
+            padding-right: 1.5rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: rotate(45deg) translateY(-50%);
+                height: 10px;
+                width: 10px;
+                border: 1px solid;
+                border-top: none;
+                border-left: none;
+                transition: .2s;
+            }
+            &.ativo {
+                &:after {
+                    transform: rotate(-135deg);
+                    top: 32px;
+                }
+            }
+        }
+
+        .sub-menu {
+            min-width: 100%;
+            position: absolute;
+            overflow: hidden;
+            height: 0;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            opacity: 0;
+            transition: .2s;
+
+            a {
+                background-color: black;
+                color: white;
+                border-bottom: 1px solid transparentize(white, .9);
+            }
+
+            &.ativo {
+                height: auto;
+                opacity: 1;
+            }
+        }
     }
 
     @media(max-width: 750px) {
-        flex-direction: column;
-        justify-content: flex-start;
-        box-shadow: 0 0 10px transparentize(black,.8);
-        position: fixed;
+        display: block;
+        position: absolute;
+        background-color: black;
+        top: 70px;
         right: -100%;
+        height: unset;
+        
+        a {
+            color: white;
+            padding: .75rem;
+            border-bottom: 1px solid transparentize(white, .9);
+        }
         &.ativo {
             right: 0;
+        }
+        .menu-item-has-children {
+            > a {
+                &:after {
+                    top: 14px;
+                    right: 15px;
+                    border-color: white;
+                }
+                &.ativo {
+                    &:after {
+                        top: 18px;
+                        transform: rotate(-135deg);
+                    }
+                }
+            }
+            .sub-menu {
+                background-color: black;
+                position:static;
+                min-width: 100%;
+                max-width: 200px;
+                a {
+                    padding-left: 1.5rem;
+                }
+            }
         }
     }
 }
