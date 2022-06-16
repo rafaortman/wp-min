@@ -92,6 +92,20 @@ $displays: block, flex, grid, inline, inline-block, inline-flex;
     }
 }
 
+.wpcf7-form {
+    p {
+        margin: 0;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    br {
+        display: none;
+    }
+}
+
 @mixin v_align {
     display: flex;
     flex-direction: column;
