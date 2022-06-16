@@ -1,23 +1,15 @@
 label {
     display: block;
-
-    span {
-        text-transform: uppercase;
-    }
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"],{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: inherit;
     width: 100%;
     font-family: inherit;
     border: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
 }
 
 input[type="submit"] {
@@ -25,16 +17,11 @@ input[type="submit"] {
     -webkit-border-radius: none;
     appearance: none;
     border: none;
-    font-size: 1rem;
+    font-size: inherit;
     cursor: pointer;
     display: inline-block;
     background: black;
-    color: #fff;
     transition: .3s;
-
-    &:hover {
-        opacity: .9;
-    }
 }
 
 select {
@@ -44,22 +31,6 @@ select {
 textarea {
     padding: .5rem;
     width: 100%;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
+    border: none;
     font-family: inherit;
-}
-
-.wpcf7-form {
-    p {
-        margin: 0;
-
-        &:empty {
-            display: none;
-        }
-    }
-
-    br {
-        display: none;
-    }
 }
