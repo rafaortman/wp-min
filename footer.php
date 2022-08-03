@@ -1,10 +1,15 @@
 <footer id="siteRodape">
-    <?php if ( is_user_logged_in() ): ?>
+
+</footer>
+
+<?php if ( is_user_logged_in() ): ?>
+    <hr>
+    <div class="tac">
         <a href="<?php echo admin_url(); ?>">
             WP-admin
         </a>
-    <?php endif; ?>
-</footer>
+    </div>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 
