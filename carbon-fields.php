@@ -28,6 +28,24 @@
         ) );
     }
 
+// Página inicial
+    add_action( 'carbon_fields_register_fields', 'home_fields' );
+    function home_fields() {
+        Container::make( 'post_meta', 'Slides' )
+            ->where( 'post_id', '=', '8' ) // only show our new fields on pages
+            ->add_fields( array(
+                Field::make( 'complex', 'slides', 'Slides' )
+                    ->set_layout( 'tabbed-horizontal' )
+                    ->add_fields( array(
+                        Field::make( 'text', 'titulo', 'Título' ),
+                        Field::make( 'rich_text', 'conteudo', 'Conteúdo' ),
+                        Field::make( 'text', 'link', 'Link' ),
+                        Field::make( 'image', 'imagem', 'Imagem' )
+                            ->set_value_type('url')
+                    ) ),
+            ) );
+    }
+
 // Page 
     add_action( 'carbon_fields_register_fields', 'page_fields' );
     function page_fields() {
