@@ -15,6 +15,8 @@
     }
     add_action( 'after_setup_theme', 'theme_setup' );
 
+    add_image_size( 'fullhd', 1920, 1080 );
+
     //Adding theme css & js
     function theme_css_js() {
         wp_enqueue_style( 'theme-style', get_stylesheet_uri() . '?v='.time() );
