@@ -16,7 +16,7 @@
     <header id="siteTopo">
         <h1>
             <a href="<?php bloginfo('url'); ?>">
-                <img src="<?= carbon_get_theme_option( 'header_logo' ) ?>" alt="<?php bloginfo('name'); ?>">
+                <img src="<?= carbon_get_theme_option( 'logo' ) ?>" alt="<?php bloginfo('name'); ?>">
             </a>
             <span class="sr-only">
                 <?php bloginfo('name'); ?>
