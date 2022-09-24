@@ -5,7 +5,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="password"],{
+input[type="password"] {
     font-size: inherit;
     width: 100%;
     font-family: inherit;
@@ -14,7 +14,6 @@ input[type="password"],{
 
 input[type="submit"] {
     -webkit-appearance: none;
-    -webkit-border-radius: none;
     appearance: none;
     border: none;
     font-size: inherit;
