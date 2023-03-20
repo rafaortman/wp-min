@@ -45,7 +45,7 @@
         });
     });
 
-    $('a[href*="#"]').click(function (event) {
+    $('a[href*="#"]').on('click', function (event) {
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname) {
