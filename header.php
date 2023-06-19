@@ -22,9 +22,6 @@
                 <?php bloginfo('name'); ?>
             </span>
         </h1>
-        <div id="searchForm">
-            <?php get_search_form(); ?>
-        </div>
         <?php 
             wp_nav_menu( 
                 array(
