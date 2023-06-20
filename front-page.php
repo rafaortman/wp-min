@@ -1,3 +1,5 @@
+<!-- front-page.php -->
+
 <?php get_header(); ?>
 
 <main class="front-page">
